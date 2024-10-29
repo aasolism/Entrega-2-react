@@ -2,9 +2,8 @@ import React from "react";
 import "./cart.css";
 
 const Cart = ({ cartItems, onClose, clearCart }) => {
-  // Función para formatear los precios
   const formatPrice = (price) => {
-    return price.toLocaleString("es-CL"); // Formato chileno con puntos para miles
+    return price.toLocaleString("es-CL"); 
   };
 
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -21,13 +20,12 @@ const Cart = ({ cartItems, onClose, clearCart }) => {
               <div className="cart-item-details">
                 <p className="cart-item-name">{item.name}</p>
                 <p className="cart-item-quantity">Cantidad: {item.quantity}</p>
-                <p className="cart-item-price">Total: ${formatPrice(item.price * item.quantity)}</p> {/* Formato aplicado */}
+                <p className="cart-item-price">Total: ${formatPrice(item.price * item.quantity)}</p>
               </div>
             </div>
           ))}
-          <div className="cart-total">Total: ${formatPrice(totalPrice)}</div> {/* Formato aplicado */}
+          <div className="cart-total">Total: ${formatPrice(totalPrice)}</div> 
           <button className="checkout-button">Finalizar Compra</button>
-          {/* Botón para vaciar el carrito */}
           <button className="clear-cart-button" onClick={clearCart}>
             Vaciar Carrito
           </button>

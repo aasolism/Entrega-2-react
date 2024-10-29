@@ -1,4 +1,3 @@
-/* cart.css */
 .cart {
   position: fixed;
   right: 0;
@@ -23,7 +22,7 @@
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #fc036b; /* Color principal del título */
+  color: #fc036b; 
   text-align: center;
 }
 
@@ -47,17 +46,17 @@
 
 .cart-item-name {
   font-weight: 600;
-  color: #333; /* Color del nombre del producto */
+  color: #333; 
 }
 
 .cart-item-quantity {
   font-size: 0.9em;
-  color: #666; /* Color de la cantidad del producto */
+  color: #666; 
 }
 
 .cart-item-price {
   font-size: 0.9em;
-  color: #fc036b; /* Color del precio del producto */
+  color: #fc036b; 
 }
 
 .cart-total {
@@ -65,7 +64,7 @@
   font-size: 1.2em;
   text-align: right;
   margin-top: 20px;
-  color: #333; /* Color del total general */
+  color: #333; 
 }
 
 .checkout-button {

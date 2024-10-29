@@ -3,12 +3,12 @@ import ContadorContainer from "../Contador/ContadorContainer";
 
 const ItemDetail = ({ product, onAddToCart }) => {
   const handleAddToCart = (quantity) => {
-    onAddToCart(product, quantity); // Llama a onAddToCart con el producto y la cantidad seleccionada
+    onAddToCart(product, quantity); 
   };
 
-  // Función para formatear el precio
+  
   const formatPrice = (price) => {
-    return price.toLocaleString("es-CL"); // Usa puntos para separar miles en el formato chileno
+    return price.toLocaleString("es-CL"); 
   };
 
   return (
@@ -17,7 +17,7 @@ const ItemDetail = ({ product, onAddToCart }) => {
       <div className="text-detail-container">
         <h2 className="title-detail">{product.name}</h2>
         <p className="text-detail">{product.description}</p>
-        <p className="text-detail">Precio: ${formatPrice(product.price)}</p> {/* Aplicación del formato */}
+        <p className="text-detail">Precio: ${formatPrice(product.price)}</p> 
         <ContadorContainer stock={product.stock} initial={1} onAdd={handleAddToCart} />
       </div>
     </div>

@@ -1,4 +1,3 @@
-// NavBar.jsx
 import CartWidget from "./CartWidget";
 import { FiCpu } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -25,7 +24,7 @@ const NavBar = ({ cartCount, onCartClick }) => {
       </ul>
 
       <div className="cartwidget" onClick={onCartClick} style={{ cursor: 'pointer' }}>
-        <CartWidget cartCount={cartCount} /> {/* Añade evento de clic al carrito */}
+        <CartWidget cartCount={cartCount} /> 
       </div>
     </nav>
   );

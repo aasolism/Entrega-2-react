@@ -13,19 +13,19 @@ const Item = ({ product, onAddToCart }) => {
     onAddToCart(product, contador);
   };
 
-  // Función para formatear el precio
+
   const formatPrice = (price) => {
-    return price.toLocaleString("es-CL"); // Formato chileno
+    return price.toLocaleString("es-CL"); 
   };
 
   return (
     <div className="item">
       <img src={product.image} className="img-item" alt="" width={100} />
       <p className="text-item">{product.name}</p>
-      <p className="description-item">{product.description}</p> {/* Descripción del producto */}
-      <p className="price-item">${formatPrice(product.price)}</p> {/* Precio formateado */}
+      <p className="description-item">{product.description}</p> 
+      <p className="price-item">${formatPrice(product.price)}</p> 
 
-      {/* Contador */}
+
       <Contador
         contador={contador}
         aumentarContador={aumentarContador}

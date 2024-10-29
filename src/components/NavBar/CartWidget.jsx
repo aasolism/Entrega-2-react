@@ -1,4 +1,3 @@
-// CartWidget.jsx
 import { PiShoppingCartBold } from "react-icons/pi";
 
 const CartWidget = ({ cartCount }) => {

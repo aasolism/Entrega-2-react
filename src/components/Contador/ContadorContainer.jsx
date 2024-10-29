@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Contador from "../Contador/Contador";
-import Banner from "../Banner/Banner";
 
 const ContadorContainer = ({ stock, initial, onAdd }) => {
   const [contador, setContador] = useState(initial);

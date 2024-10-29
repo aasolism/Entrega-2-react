@@ -1,4 +1,3 @@
-// ItemListContainer.jsx
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { getProducts } from "../../data/data.js";

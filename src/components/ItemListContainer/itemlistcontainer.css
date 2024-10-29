@@ -7,12 +7,12 @@
 .itemlistcontainer .itemlist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Asegura que los productos se distribuyan uniformemente */
+  justify-content: space-around; 
 }
 
 .itemlistcontainer .item {
-  width: 18%; /* Ajusta el tamaño para que entren más elementos en la fila */
-  margin: 1%; /* Reduce el margen para evitar espacios grandes */
+  width: 18%; 
+  margin: 1%;
   padding: 10px;
   border: 2px solid rgb(37, 37, 37);
   border-radius: 15px;
@@ -59,10 +59,10 @@
   text-align: center;
 }
 
-/* Ajuste para vista de categorías: distribuye en fila */
+
 @media screen and (min-width: 1024px) {
   .itemlistcontainer.category-view .item {
-    width: 100%; /* Elementos en una fila en la vista de categoría */
+    width: 100%; 
     margin: 5px 0;
   }
 }

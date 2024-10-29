@@ -1,4 +1,3 @@
-// ItemList.jsx
 import Item from "./Item";
 
 const ItemList = ({ products, onAddToCart }) => {
