@@ -75,7 +75,7 @@ const products = [
     id: "head003",
     name: "Bose QuietComfort 35 II",
     description: "Audífonos con cancelación de ruido de alta calidad.",
-    price: 300.000,
+    price: 300000,
     stock: 10,
     image: "/img/bose-1.jpeg",
     category: "headphones"
